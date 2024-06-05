@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon"
+    type="image/svg+xml"
+    href="/vite.svg" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="style.css">
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1933673737.js"
+    crossorigin="anonymous"></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="overlay"
+    class="overlay">
+    <ul class="menu">
+      <li class="menu-item active"><a href="#">Trang chủ</a></li>
+      <li class="menu-item"><a href="#content">Giới thiệu</a></li>
+      <li class="menu-item"><a href="#courses">Khóa học</a></li>
+    </ul>
+  </div>
+  <nav>
+    <a href="#"
+      class="logo"><img src="./images/logo.png"
+        alt=""
+        class="logo-image"></a>
+    <ul class="menu">
+      <li class="menu-item active"><a href="#">Trang chủ</a></li>
+      <li class="menu-item"><a href="#content">Giới thiệu</a></li>
+      <li class="menu-item"><a href="#courses">Khóa học</a></li>
+      <li class="menu-item responsive"><button><i class="
+        fa-solid
+        fa-bars"></i></button>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <section id="content"
+        class="content-section">
+        <iframe width="560"
+          height="315"
+          src="https://www.youtube.com/embed/veWD0SWRX0A?si=EpeqzLoFZ5J14Gsi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="video"></iframe>
+        <div class="content-wrapper">
+          <h1>
+            VTC Academy
+          </h1>
+          <p>VTC Academy đã và đang khẳng định vị thể là một
+            đơn vị số 1 trong lĩnh vực đào tạo về công nghệ,
+            nội dung số, thiết kế 3D và lập trình ứng di dộng &
+            game.</p>
+          <button class="btn"
+            type="button">Tìm hiểu thêm</button>
+        </div>
+      </section>
+      <div class="banner">Công nghệ sẽ là giá trị cốt lõi trong cuộc CMCN 4.0 và 10 năm tới. Hãy cùng xây dựng sự nghiệp
+        với VTC Academy!</div>
+      <div id="courses"
+        class="courses">
+        <h2>Khóa học của chúng tôi</h2>
+        <div class="courses-wrapper">
+          <ul class="courses-list">
+            <li class="course-item">
+              <a href="#">
+                <img src="./images/fullstack.jpg"
+                  alt=""
+                  class="course-image">
+              </a>
+              <a class="course-title"
+                href="#">
+                <h3>
+                  Lập trình Fullstack
+                </h3>
+              </a>
+              <p class="course-description">Front-end, Back-end, Cloud, Database</p>
+            </li>
+            <li class="course-item">
+              <a href="#">
+                <img src="./images/mobile.jpg"
+                  alt=""
+                  class="course-image">
+              </a>
+              <a class="course-title"
+                href="#">
+                <h3>
+                  Lập trình mobile
+                </h3>
+              </a>
+              <p class="course-description">IOS - Swift, Android - Kotlin, Firebase, SQLite</p>
+            </li>
+            <li class="course-item">
+              <a href="#">
+                <img src="./images/game.jpg"
+                  alt=""
+                  class="course-image">
+              </a>
+              <a class="course-title"
+                href="#">
+                <h3>
+                  Lập trình game
+                </h3>
+              </a>
+              <p class="course-description">Game2D - Cocoon2D-x, Game3D - Unity3D, Game Server - SmartFox</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright © VTC Academy 2020</p>
+  </footer>
+  <script type="module"
+    src="/main.js"></script>
+</body>
+
+</html>

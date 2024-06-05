@@ -1,0 +1,297 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--primary-color: rgb(12, 98, 171);
+	--secondary-color: #4da5e4;
+	--button-color: #0c62ab;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(12, 98, 171, 0.9);
+	z-index: 2;
+	cursor: pointer;
+}
+.overlay .menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	list-style-type: none;
+}
+
+.overlay .menu-item a {
+	padding: 10px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.container {
+	padding: 0 15px;
+}
+
+nav {
+	width: 100%;
+	background-color: var(--primary-color);
+	padding: 20px 50px;
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	align-items: center;
+	top: 0;
+}
+
+.logo {
+	width: 20%;
+}
+
+.logo-image {
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	list-style: none;
+	gap: 30px;
+}
+
+.menu-item a {
+	cursor: pointer;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.437);
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.menu-item.responsive {
+	display: none;
+}
+
+.menu-item.active a {
+	color: white;
+}
+
+.menu-item:hover a {
+	color: white;
+}
+
+main {
+	width: 80%;
+	margin: 80px auto auto;
+}
+
+.content-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 30px;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.video {
+	width: 50%;
+}
+
+.content-wrapper {
+	width: 50%;
+}
+
+.content-wrapper h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.content-wrapper p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.content-wrapper button {
+	background-color: var(--button-color);
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.content-wrapper button:hover {
+	background-color: var(--secondary-color);
+}
+
+.banner {
+	width: 100%;
+	background-color: var(--secondary-color);
+	padding: 30px;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+}
+
+.courses {
+	width: 100%;
+}
+
+.courses h2 {
+	text-align: center;
+	margin: 30px;
+}
+
+.courses-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 30px;
+	width: 100%;
+	list-style: none;
+}
+
+.course-item {
+	width: 30%;
+	border-radius: 15px;
+	padding: 15px;
+	gap: 30px;
+	height: 375px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.course-item:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.course-item .course-title {
+	text-decoration: none;
+	color: var(--primary-color);
+	font-size: 20px;
+}
+
+.course-item .course-image {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+footer {
+	background-color: var(--primary-color);
+	color: white;
+	text-align: center;
+	padding: 50px;
+	margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.logo {
+		width: 40%;
+	}
+
+	nav {
+		padding: 20px 10px;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+	.menu-item {
+		font-size: 16px;
+		display: none;
+	}
+
+	.menu-item.responsive {
+		display: block;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.menu-item.responsive button {
+		color: white;
+		background-color: var(--primary-color);
+		border: 1px solid white;
+		padding: 5px 5px;
+		font-size: 18px;
+		cursor: pointer;
+		border-radius: 5px;
+		width: 100%;
+	}
+
+	.content-section {
+		flex-direction: column;
+	}
+
+	.video {
+		width: 100%;
+	}
+
+	.content-wrapper {
+		width: 100%;
+	}
+
+	.content-wrapper h1 {
+		font-size: 30px;
+	}
+
+	.content-wrapper p {
+		font-size: 16px;
+	}
+
+	.content-wrapper button {
+		font-size: 14px;
+	}
+
+	.banner {
+		padding: 20px;
+		font-size: 16px;
+	}
+
+	.courses-list {
+		flex-wrap: wrap;
+	}
+
+	.course-item {
+		width: 45%;
+		margin-bottom: 20px;
+	}
+
+	.course-item .course-title {
+		font-size: 18px;
+	}
+
+	.course-item .course-image {
+		height: 200px;
+	}
+
+	footer {
+		padding: 20px;
+	}
+}
